@@ -1,0 +1,16 @@
+{% extends "home.html" %}
+{% block content %}
+<form action="#" method="POST" enctype = "multipart/form-data">
+    <p>Upload File: <input type = "file" name = "file" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"/></p> 
+   <p><input type = "submit" value = "Upload" /></p> 
+      
+</form>
+
+{% if result %}
+<p>done</p>
+<div>File processing completed check your local drive for files</div>
+<form action="#" method="POST">
+
+</form>
+{% endif %}
+{% endblock %}
